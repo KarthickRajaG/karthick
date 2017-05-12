@@ -1,0 +1,22 @@
+
+public class ConversionFromStringTONumber {
+	public static void main(String[] args) {
+		String str = "12345"; 
+        int num = 0;
+        int len = str.length(); 
+        int ind = 0;
+    
+        while(len>0){
+   
+           char c = str.charAt(ind);  //it will return one character which existing in respective index
+           int digit = (int) c - '0'; //Here i am casting character into the integer 
+                                      //So it will return ASCII value of respective number.(eg. ASCII value of '2' 50) 
+             System.out.println(digit);                         //And ASCII value of '0' 48. So we can get our digit subtract by zero ASCII value.
+           num = num*10 + digit; 
+           len--;
+           ind++;
+        }
+        System.out.println(num);
+	}
+
+}

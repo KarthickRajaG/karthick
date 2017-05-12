@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Anagrams {
+	public static void main(String[] args) {
+		Scanner scr=new Scanner(System.in);
+		String str1=scr.nextLine();
+		String str2=scr.nextLine();
+		char c1[]=str1.toCharArray();
+		char c2[]=str2.toCharArray();
+		for(int i=0;i<=c1.length-1;i++)
+		{
+			for(int j=0;j<=c2.length-1;j++)
+			{
+				if(c1[i]==c2[j])
+				{
+					c1[i]=' ';
+					c2[j]=' ';
+				}
+			}
+		}
+			int count=0;
+			for(int k=0;k<c1.length-1;k++)
+			{
+				if(c1[k]!=' ')
+				{
+					count++;
+				}
+			}
+			if((count==0)&&(c1.length==c2.length))
+			{
+				System.out.println("both are anagrams");
+			}
+			else
+			{
+				System.out.println("no anagrams");
+		}
+	}
+
+}

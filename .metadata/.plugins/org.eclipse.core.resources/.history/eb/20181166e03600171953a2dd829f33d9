@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class uppercase {
+public static void main(String[] args) {
+	Scanner scr=new Scanner(System.in);
+	String str=scr.next();
+	char c[]=str.toCharArray();
+	int min=0;
+	char str1=(char)(c[min]-32);
+	for(int i=0;i<c.length;i++)
+	{
+		if(c[i]==' ')
+		{
+			i++;
+	 str1+=(char)(c[i]-32);
+		}
+	}
+}
+}

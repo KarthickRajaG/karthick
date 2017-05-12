@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class shortname {
+	public static void main(String[] args) {
+		Scanner scr=new Scanner(System.in);
+		String fullname=scr.next().toLowerCase().trim();
+		 char[] arr = fullname.toCharArray();
+
+         String shortName="";
+
+         int min = 0;
+         shortName += (char) (arr[min] - 32);		
+	System.out.println(shortName);
+
+	
+		
+	}
+
+}

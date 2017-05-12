@@ -1,0 +1,17 @@
+
+public class Taxi extends Car {
+	public Taxi(){
+		System.out.println("Taxi cons");
+	}
+	public Taxi(int speed)
+	{
+		super(i);
+		//this();
+		System.out.println("arg cons");
+	}
+	public static void main(String[] args) {
+
+		Taxi taxi1=new Taxi(100);
+	}
+
+}

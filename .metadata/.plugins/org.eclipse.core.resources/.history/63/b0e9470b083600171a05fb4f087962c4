@@ -1,0 +1,17 @@
+
+public class sta {
+	 static int count = 10;
+	 static{
+		 count++;
+		 System.out.println("first static value" + count);
+	 }
+	 static 
+	 {
+		 count++;
+		 System.out.println("second static value" + count);
+	 }
+	public static void main(String[] args) {
+
+	}
+
+}

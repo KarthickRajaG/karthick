@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class uppercase {
+public static void main(String[] args) {
+	Scanner scr=new Scanner(System.in);
+	String str=scr.next();
+	char c[]=str.toCharArray();
+	int min=0;
+	char str1=(char)(c[min]-32);
+	for(int i=min+1;i<c.length;i++)
+	{
+		str1 +=c[i];
+	}
+	System.out.println(str1);
+}
+}

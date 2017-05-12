@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ReverseStringRecursiveFunction {
+	String revStr = "";
+	 
+    String reverseString(String str){
+ 
+         String revStr = reverseLogic(str, str.length()-1);
+         return revStr;
+    }
+
+    String reverseLogic(String str, int ind){
+ 
+         if(ind>=0){
+ 
+            revStr +=  str.charAt(ind);
+            ind--;
+            reverseLogic(str, ind);
+         } 
+         return revStr;
+    }
+
+    public static void main(String[] args) {
+ 
+         Scanner in =new Scanner(System.in);
+         ReverseStringRecursiveFunction rs=new ReverseStringRecursiveFunction();
+         System.out.println("Enter the String");
+         String revString=rs.reverseString(in.nextLine());
+         System.out.println("Reverse String: "+revString);
+		
+	}
+
+}
